@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+
+
+<hibernate-mapping>
+
+  <class name = "com.pojo.Emp_Pojo2" table = "empdata">
+
+
+   <id name = "id" type = "int" column = "Employee_ID"/>
+
+   <property name = "Empname" column = "Employee_Name" type = "string"/>
+
+  
+   <property name = "phone" column = "Phone" type = "string"/>
+
+
+
+  </class>
+<query name="NamedQueryView">
+
+<![CDATA[from Emp_Pojo]]>
+
+</query>
+<query name="NamedQueryDelete">
+<![CDATA[delete from Emp_Pojo where id=:deleID]]>
+</query>
+
+
+
+</hibernate-mapping>
