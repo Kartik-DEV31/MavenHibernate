@@ -8,18 +8,24 @@
 
 <property name = "hibernate.connection.autocommit">true</property>
 <property name="hibernate.connection.driver_class" >com.mysql.cj.jdbc.Driver</property>
-<property name = "hibernate.connection.password">Sharma1234@</property>
-<property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/employees</property>
+<property name = "hibernate.connection.password">admin</property>
+<property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/Employees</property>
 <property name = "hibernate.connection.username">root</property>
 <property name = "hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
 <property name="hibernate.hbm2ddl.auto">update</property>
 <property name = "hibernate.show_sql">true</property>
+<property name="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</property>
 
-<!--<mapping resource="emp.hbm.xml"/>-->
+<mapping resource="emp.hbm.xml"/>
 
 <mapping class = "com.pojo.VendorPojo"/>
 <mapping class = "com.pojo.CustomerPojo"/>
+<mapping class="com.pojo.Emp_Pojo"/>
 <mapping class="com.pojo.Emp_Pojo2"/>
+<mapping class="com.pojo.Employee_ManyPojo"/>
+<mapping class="com.pojo.Meetings_Pojo"/>
+<mapping class="com.pojo.ManyEmp"/>
+ <mapping class="com.pojo.CompanyAddress"/>
 </session-factory>
 
 </hibernate-configuration>

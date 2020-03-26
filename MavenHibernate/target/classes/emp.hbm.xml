@@ -10,7 +10,7 @@
 
 <hibernate-mapping>
 
-  <class name = "com.pojo.Emp_Pojo2" table = "empdata">
+  <class name = "com.pojo.Emp_Pojo" table = "empData">
 
 
    <id name = "id" type = "int" column = "Employee_ID"/>
